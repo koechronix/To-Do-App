@@ -1,8 +1,13 @@
 import React from 'react'
 
-function Header() {
+function Header({todos}) {
   return (
-    <div>Header</div>
+    <div>
+        <h1 className="header"> To Do Tasks</h1>
+        <div>
+            <h2 className="all-tasks-title">All Tasks</h2>
+        </div>
+        </div>
   )
 }
 
