@@ -1,41 +1,43 @@
 import './App.css';
 import React, { useEffect, useState} from 'react';
+import NewTask from './components/NewTask';
 import ItemList from './components/ItemList'
 import Header from './components/Header';
 
 function App() {
-  const [todos, setTodos] = useState([])
+  const [tasks, setTasks] = useState([])
 
-  useEffect(() => {
-    fetch('http://localhost:9292/todos')
-    .then(r => r.json())
-    .then(todos => setTodos(todos))
-  }, [])
+  // useEffect(() => {
+  //   fetch('http://localhost:9292/tasks')
+  //   .then(r => r.json())
+  //   .then(tasks => setTasks(tasks))
+  // }, [])
 
-  function handleAddTodo(newTodo) {
-    setTodos([...todos, newTodo])
+  function handleAddTask(newTask) {
+    setTasks([...tasks, newTask])
   }
 
   const handleDeleteItem = (id) => {
-    const finalTodos = todos.filter(todo => todo.id !== id)
-    setTodos(finalTodos)
+    const finalTasks = tasks.filter(task => task.id !== id)
+    setTasks(finalTasks)
   }
 
-  function handleUpdateTodo(updatedTodoObj) {
-    const updatedTodos = todos.map(todo => {
-      if (todo.id === updatedTodoObj.id) {
-        return updatedTodoObj;
+  function handleUpdateTask(updatedTaskObj) {
+    const updatedTasks = tasks.map(task => {
+      if (task.id === updatedTaskObj.id) {
+        return updatedTaskObj;
       } else {
-        return todo;
+        return task;
       }
     });
-    setTodos(updatedTodos);
+    setTasks(updatedTasks);
   }
 
   return (
    <div className="main">
-     <Header todos={todos} onTodoDelete={handleDeleteItem}/>
-     <ItemList onAddTodo={handleAddTodo} todos={todos} onTodoDelete={handleDeleteItem} onUpdateTodo={handleUpdateTodo}/>
+     <Header tasks={tasks} onTaskDelete={handleDeleteItem}/>
+     <ItemList onAddTask={handleAddTask} tasks={tasks} onTodoDelete={handleDeleteItem} onUpdateTask={handleUpdateTask}/>
+
      <br/><br/>
    </div>
   )
