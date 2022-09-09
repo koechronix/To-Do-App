@@ -76,24 +76,11 @@ body {
   background-color: #9fe25d;
   left: 18%;
   width: 60%;
-  /* height: 80%; */
   position: relative;
-  /* border: 3px solid #bad1ab; */
-  /* border-radius: 2px; */
   box-shadow: 0px 0px 7px black;
   
 }
 
-/* .title {
-  border-bottom: 3px solid black;
-  position: relative;
-  left: 25%;
-  width: 50%;
-} */
-
-/* .third-line {
-  display: inline-block;
-} */
 
 .organize {
   display: flex;
