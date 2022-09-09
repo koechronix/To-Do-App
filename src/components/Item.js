@@ -25,9 +25,9 @@ function Item({task, onTaskDelete, onUpdateTask}) {
     }
 
     function idName() {
-        if (task.importance === "1. high") {
+        if (task.importance == "1.High") {
             return 'high'
-        } else if(task.importance === "3. low") {
+        } else if(task.importance == "2.Low") {
             return 'low'
         }
     }

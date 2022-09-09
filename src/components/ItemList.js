@@ -2,7 +2,7 @@ import React,{ useEffect, useState} from 'react'
 import Item from './Item'
 import TaskList from './TaskList'
 import NewTask from './NewTask'
-import SearchBar from './SearchBar'
+// import SearchBar from './SearchBar'
 
 
 function ItemList({tasks, onTaskDelete, onUpdateTask, onAddTask}) {
@@ -33,14 +33,14 @@ function ItemList({tasks, onTaskDelete, onUpdateTask, onAddTask}) {
                         <NewTask onAddTask={onAddTask}/>
                     </div>
 
-                    <div className='info'>Search for Tasks</div>             
+                    {/* <div className='info'>Search for Tasks</div>             
                     <div className='task'>
                         <br/>
                         <SearchBar onSearch={setSearch}/>
                         <br/>
-                    </div>
+                    </div> */}
 
-                    <div className='info'>Filter by Level</div>
+                    {/* <div className='info'>Filter by Level</div>
                    
                     <select className='select' onChange={onFilterChange} value={filterBy}>
                         <option value="">Choose Level</option>
@@ -50,7 +50,7 @@ function ItemList({tasks, onTaskDelete, onUpdateTask, onAddTask}) {
                         <option value="coding">Coding</option>
                         <option value="music">Music</option>
                         <option value="shopping">Shopping</option>
-                    </select>
+                    </select> */}
 
                     <div id='tasks-cat'>
                     {renderTasksList}
@@ -64,6 +64,7 @@ function ItemList({tasks, onTaskDelete, onUpdateTask, onAddTask}) {
             <div id='edit' className='info'>Edit Tasks</div>
 
                 <div className='the-list'>
+                    
                     {renderTasks}
                     
                 </div>

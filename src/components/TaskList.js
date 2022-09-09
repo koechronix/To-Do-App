@@ -13,7 +13,7 @@ function TaskList({task, onTaskDelete}) {
       <div className='all-tasks'>
           {task.importance === "1. high" ? (
               <li className="red"><button className='trash' onClick={handleDeleteClick}>X</button>{task.item.toLowerCase()} </li>
-          ) : task.importance === "3. low" ? (
+          ) : task.importance === "2. low" ? (
               <li className="green" ><button className='trash' onClick={handleDeleteClick}>X</button>{task.item.toLowerCase()} </li> 
           ) : (
               <li>{task.item.toLowerCase()}</li> 

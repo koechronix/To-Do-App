@@ -30,7 +30,7 @@ function NewTask({onAddTask}) {
 
   return (
     <div>
-      <h3 className='all-tasks'>Add New Task</h3>
+      {/* <h3 className='all-tasks'>Add New Task</h3> */}
       <form className='add-forum' onSubmit={handleSubmit}>
         <input
           type="text"
@@ -44,10 +44,11 @@ function NewTask({onAddTask}) {
         <select className='importance' onChange={(e) => setImportance(e.target.value)}>
           <option value={importance}>Choose Importance</option>
           <option value="1. high">High</option>
-          <option value="3. low">Low</option>
+          <option value="2. low">Low</option>
         </select>
         <select className='level' onChange={(e) => setLevelId(e.target.value)}>
           <option value={level_id}>Choose Level</option>
+          <option value="0">Not specified</option>
           <option value="1">Cattle grazing</option>
           <option value="2">Farm works</option>
           <option value="3">Gym</option>

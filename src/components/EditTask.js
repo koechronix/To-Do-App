@@ -1,10 +1,9 @@
 import React, { useEffect, useState} from 'react'
 
 function EditTask({onUpdateTask, task}) {
-  const [newTask, setNewTask] = useState(task.item)
+  const [newTask, setTask] = useState(task.item)
   const [importance, setImportance] = useState(task.importance)
   const [level_id, setLevelId] = useState(task.level_id)
-
 
   function handleFormSubmit(e) {
     e.preventDefault();
@@ -34,17 +33,18 @@ function EditTask({onUpdateTask, task}) {
         autoComplete="off"
         value={newTask}
         placeholder="item"
-        onChange={(e) => setNewTask(e.target.value)}
+        onChange={(e) => setTask(e.target.value)}
       />
-
+      
       <select className='importance2'  onChange={(e) => 
         setImportance(e.target.value)}>
         <option value={importance}>Update Importance</option>
         <option value="1. high">High</option>
-        <option value="3. low">Low</option>
+        <option value="2. low">Low</option>
       </select>
       <select className='level2' onChange={(e) => setLevelId(e.target.value)}>
         <option value={level_id}>Update Level</option>
+        <option value="0">Not specified</option>
         <option value="1">Cattle grazing</option>
         <option value="2">Farm works</option>
         <option value="3">Gym</option>

@@ -1,11 +1,269 @@
 body {
-  background: #EB8457;
-  background-size: 400% 400%;
-
+	background: #EB8457;
+	background-size: 400% 400%;
 }
-.main-text{
+
+.main-text {
   text-align: center;
 }
+
 .header {
+  
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.all-tasks-title {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.all-tasks {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+  
+}
+
+.center-text-border {
+  text-align: center;
+  border-style: solid;
+  border-color: #83c40a;
+}
+
+/* .left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.red {
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.orange {
+  color: orange;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+} */
+
+/* .green {
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+} */
+
+
+
+
+
+.flexer {
+  display: flex
+}
+
+.flex {
+  flex: 1
+}
+
+
+
+.main {
+  text-align: center;
+  
+  background-color: #9fe25d;
+  left: 18%;
+  width: 60%;
+  /* height: 80%; */
+  position: relative;
+  /* border: 3px solid #bad1ab; */
+  /* border-radius: 2px; */
+  box-shadow: 0px 0px 7px black;
+  
+}
+
+/* .title {
+  border-bottom: 3px solid black;
+  position: relative;
+  left: 25%;
+  width: 50%;
+} */
+
+/* .third-line {
+  display: inline-block;
+} */
+
+.organize {
+  display: flex;
+}
+
+.dropdown {
+  position: sticky;
   font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.info {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-radius: 50px 50px 50px 50px;
+  border: 4px ridge #0c0b0c;
+  margin-bottom: 1px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  background-color: #569cdd;
+  
+}
+
+.the-list {
+  width: 100%;
+}
+.select {
+  background-color: #ff4bf6;
+  box-shadow: 0px 0px 2px;
+ 
+  border-radius: 3px;
+  position: relative;
+  width: 100%;
+}
+
+.add-forum input {
+  width: 60%;
+  background-color: greenyellow;
+  border-radius: 40px 40px 40px 40px;
+  margin: 3px;
+}
+
+.importance {
+  width: 30%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  box-shadow: 0px 0px 3px;
+  border-radius: 40px 40px 40px 40px;
+  background-color: greenyellow;
+}
+
+.level {
+  width: 30%;
+  box-shadow: 0px 0px 3px;
+  border-radius: 40px 40px 40px 40px;
+  background-color: greenyellow;
+}
+
+
+
+.edit-forum input {
+  width: 90%;
+  background-color: greenyellow;
+  margin: 3px;
+}
+
+.importance2 {
+  width: 45%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  box-shadow: 0px 0px 3px;
+  border-radius: 2px;
+}
+
+.level2 {
+  width: 45%;
+  box-shadow: 0px 0px 3px;
+  border-radius: 2px;
+}
+
+#tasks-cat {
+  padding-left: 0%;
+  width: 80%;
+}
+
+.task {
+  border: 3px  rgba(0, 0, 0, 0.089);
+  background-color: #ecb473;
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 5px;
+  margin-bottom: 10px
+ 
+
+}
+
+#high {
+  border: 2px dotted red;
+  background-color: rgb(245, 157, 157);
+  border-radius: 4px;
+  
+  
+}
+
+#high .btn {
+  background-color: pink;
+}
+
+#low {
+  border: 2px dotted green;
+  background-color: rgb(169, 253, 169);
+  border-radius: 4px; 
+}
+
+#low .btn {
+  background-color: aquamarine;
+}
+
+.item-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.new-task {
+  width: 100%;
+  top: 180px;
+  position: absolute;
+}
+
+.list {
+  width: 50%;
+  display: inline-block;
+  
+  overflow: visible;
+  
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.btn {
+  border-radius: 10%;
+  background-color: #ffed4b;
+  
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 3px black;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 5px white;
+ 
+}
+
+.trash {
+  cursor: pointer;
+}
+
+.trash:active {
+  background-color: red;
+  color: white;
+}
+
+#edit {
+  margin-bottom: 5px;
 }

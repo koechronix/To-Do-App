@@ -7,11 +7,11 @@ import Header from './components/Header';
 function App() {
   const [tasks, setTasks] = useState([])
 
-  // useEffect(() => {
-  //   fetch('http://localhost:9292/tasks')
-  //   .then(r => r.json())
-  //   .then(tasks => setTasks(tasks))
-  // }, [])
+  useEffect(() => {
+    fetch('http://localhost:9292/tasks')
+    .then(r => r.json())
+    .then(tasks => setTasks(tasks))
+  }, [])
 
   function handleAddTask(newTask) {
     setTasks([...tasks, newTask])
