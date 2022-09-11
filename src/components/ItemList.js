@@ -1,8 +1,8 @@
-import React,{ useEffect, useState} from 'react'
+import React,{  useState} from 'react'
 import Item from './Item'
 import TaskList from './TaskList'
 import NewTask from './NewTask'
-// import SearchBar from './SearchBar'
+import SearchBar from './SearchBar'
 
 
 function ItemList({tasks, onTaskDelete, onUpdateTask, onAddTask}) {

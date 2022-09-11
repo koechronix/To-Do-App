@@ -1,4 +1,4 @@
-import React, { useEffect,useState} from 'react'
+import React, {useState} from 'react'
 import EditTask from './EditTask';
 
 function Item({task, onTaskDelete, onUpdateTask}) {
@@ -25,9 +25,9 @@ function Item({task, onTaskDelete, onUpdateTask}) {
     }
 
     function idName() {
-        if (task.importance == "1.High") {
+        if (task.importance === "1.High") {
             return 'high'
-        } else if(task.importance == "2.Low") {
+        } else if(task.importance === "2.Low") {
             return 'low'
         }
     }
@@ -42,7 +42,7 @@ function Item({task, onTaskDelete, onUpdateTask}) {
                     <button className='btn' onClick={handleClick}>Edit</button>
                     {getEditor()}
                     <br/><br/>
-                    <button className='trash'  onClick={handleDeleteClick}>X</button>
+                    {/* <button className='trash'  onClick={handleDeleteClick}>X</button> */}
                    
 
                 </div>
