@@ -8,7 +8,7 @@ function App() {
   const [tasks, setTasks] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:9292/tasks')
+    fetch('https://amos-todo.herokuapp.com/tasks')
     .then(r => r.json())
     .then(tasks => setTasks(tasks))
   }, [])

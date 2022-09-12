@@ -8,7 +8,7 @@ function EditTask({onUpdateTask, task}) {
   function handleFormSubmit(e) {
     e.preventDefault();
 
-    fetch(`http://localhost:9292/tasks/${task.id}`, {
+    fetch(`https://amos-todo.herokuapp.com/tasks/${task.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

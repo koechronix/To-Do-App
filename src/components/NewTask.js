@@ -8,7 +8,7 @@ function NewTask({onAddTask}) {
   function handleSubmit(e) {
     e.preventDefault()
 
-    fetch("http://localhost:9292/tasks", {
+    fetch("https://amos-todo.herokuapp.com/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

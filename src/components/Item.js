@@ -9,7 +9,7 @@ function Item({task, onTaskDelete, onUpdateTask}) {
     }
 
     function handleDeleteClick() {
-        fetch(`http://localhost:9292/tasks/${task.id}`, {
+        fetch(`https://amos-todo.herokuapp.com/tasks/${task.id}`, {
           method: "DELETE",
         })
         onTaskDelete(task.id)
